@@ -9,15 +9,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/donode/donode-cli.git"
-  },
   "keywords": [
     "donode"
   ],
   "author": "Madhusudhana Rao Dollu",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donode/donode-cli.git"
+  },
   "bugs": {
     "url": "https://github.com/donode/donode-cli/issues"
   },
