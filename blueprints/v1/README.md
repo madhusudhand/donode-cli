@@ -1,2 +1,5 @@
 # <%= appName %>
-blueprints yet to be placed.
+
+Run
+
+> npm start
