@@ -1,6 +1,6 @@
 {
   "name": "donode-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CLI for donode",
   "main": "./lib/cli/index.js",
   "bin": {
