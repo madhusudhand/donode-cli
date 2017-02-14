@@ -5,9 +5,9 @@ router.routes([
   {
     path: '/hello',
     method: 'GET',
-    handler: 'UserController@get'
+    handler: 'UserController@get',
+    middleware: ['Auth']
   }
-
 ]);
 
 module.exports = router;

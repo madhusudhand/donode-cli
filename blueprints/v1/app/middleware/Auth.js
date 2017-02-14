@@ -6,11 +6,9 @@ class Auth extends Middleware {
     super();
   }
 
-  handle(request, next) {
-    // do some checks
-    // return error object if not satisfied
-    // else return next()
-
+  handle(request, response, next) {
+    // response.send({some: 'data'});
+    // or forward the response using
     return next();
   }
 }

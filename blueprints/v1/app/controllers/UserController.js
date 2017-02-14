@@ -7,32 +7,32 @@ class UserController extends Controller {
     super();
   }
 
-  get(request) {
-    return {
+  get(request, response) {
+    response.send({
       hello: 'world !!!!'
-    };
+    });
   }
 
-  post(request) {
+  post(request, response) {
     console.log(request.headers);
     console.log(request.queryParams);
     console.log(request.routeParams);
     console.log(request.body);
-    return {
+    response.send({
       result: 'data posted'
-    };
+    });
   }
 
-  put() {
-    return {
+  put(request, response) {
+    response.send({
       result: 'data updated'
-    };
+    });
   }
 
-  delete() {
-    return {
+  delete(request, response) {
+    response.send({
       result: 'data deleted'
-    };
+    });
   }
 }
 
