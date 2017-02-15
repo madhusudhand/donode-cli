@@ -12,7 +12,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "donode": "0.0.2"
+    "donode": "1.0.0-alpha.3"
   },
   "devDependencies": {}
 }
