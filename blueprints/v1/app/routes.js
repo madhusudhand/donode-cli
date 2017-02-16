@@ -6,7 +6,8 @@ router.routes([
     path: '/hello',
     method: 'GET',
     handler: 'UserController@get',
-    middleware: ['Auth']
+    middleware: ['Auth'],
+    headers: ['json-content']
   }
 ]);
 

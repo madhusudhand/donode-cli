@@ -1,5 +1,4 @@
 # <%= appName %>
 
-Run
-
+> npm install
 > npm start
