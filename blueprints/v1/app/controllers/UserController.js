@@ -9,15 +9,11 @@ class UserController extends Controller {
 
   get(request, response) {
     response.send({
-      hello: 'world !!!!'
+      hello: 'world !!'
     });
   }
 
   post(request, response) {
-    console.log(request.headers);
-    console.log(request.queryParams);
-    console.log(request.routeParams);
-    console.log(request.body);
     response.send({
       result: 'data posted'
     });

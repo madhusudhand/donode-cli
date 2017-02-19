@@ -1,14 +1,23 @@
 'use strict';
 const router = require('donode').Router;
 
+/*  ------   ROUTES   -----
+**
+**  One place for all routes.
+**
+*/
+
 router.routes([
+  { path: '/', method: 'GET', hander: 'HomeController@get' },
   {
     path: '/hello',
     method: 'GET',
     handler: 'UserController@get',
     middleware: ['Auth'],
-    headers: ['json-content']
-  }
+    headers: ['allow-cors']
+  },
+
+  // add more
 ]);
 
 module.exports = router;

@@ -1,5 +1,8 @@
 const config = {
-  // appRoot: __dirname
+  appDir       : 'app',
+  controllerDir: 'controllers',
+  middlewareDir: 'middleware',
 };
+
 
 module.exports = config;

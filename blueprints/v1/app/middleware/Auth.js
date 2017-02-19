@@ -7,8 +7,12 @@ class Auth extends Middleware {
   }
 
   handle(request, response, next) {
-    // response.send({some: 'data'});
-    // or forward the response using
+    // do some auth validation here
+
+    // if (not authorized)
+    // return response.send(401, { some: 'error data' });
+
+    // else (proceed to the controller hander)
     return next();
   }
 }
