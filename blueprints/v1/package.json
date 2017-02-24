@@ -1,12 +1,12 @@
 {
-  "name": "<%= appName %>",
+  "name": "sdfa",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "readme": "README.md",
   "keywords": [
-    "angular",
-    "angular2-cli"
+    "donode",
+    "node.js"
   ],
   "scripts": {
     "start": "node app.js"

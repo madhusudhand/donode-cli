@@ -8,7 +8,7 @@ const router = require('donode').Router;
 */
 
 router.routes([
-  { path: '/', method: 'GET', hander: 'HomeController@get' },
+  { path: '/', method: 'GET', handler: 'HomeController@get' },
   {
     path: '/hello',
     method: 'GET',
