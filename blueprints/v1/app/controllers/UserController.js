@@ -8,25 +8,25 @@ class UserController extends Controller {
   }
 
   get(request, response) {
-    response.send({
+    return response.send({
       hello: 'world !!'
     });
   }
 
   post(request, response) {
-    response.send({
+    return response.send({
       result: 'data posted'
     });
   }
 
   put(request, response) {
-    response.send({
+    return response.send({
       result: 'data updated'
     });
   }
 
   delete(request, response) {
-    response.send({
+    return response.send({
       result: 'data deleted'
     });
   }

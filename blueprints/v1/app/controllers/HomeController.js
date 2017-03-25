@@ -8,7 +8,7 @@ class HomeController extends Controller {
   }
 
   get(request, response) {
-    response.send({
+    return response.send({
       'app': 'works !!!'
     });
   }
