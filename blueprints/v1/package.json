@@ -1,5 +1,5 @@
 {
-  "name": "abc",
+  "name": "app",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -12,7 +12,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "donode": "1.0.0-beta.2"
+    "donode": "1.0.0-beta.3"
   },
   "devDependencies": {}
 }
