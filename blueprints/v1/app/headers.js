@@ -1,5 +1,4 @@
 'use strict';
-const headers = require('donode').Headers;
 
 /*  ---------------    HEADERS     ------------------
 **
@@ -13,7 +12,7 @@ const headers = require('donode').Headers;
 **  using -> response.setHeader(name, value);
 */
 
-headers.register({
+module.exports = {
   'json-content': { name: 'Content-Type', value: 'application/json; charset=UTF-8'},
   'allow-cors': [
     { name: 'Access-Control-Allow-Origin', value: '*'},
@@ -21,4 +20,4 @@ headers.register({
   ],
 
   // add more
-});
+};

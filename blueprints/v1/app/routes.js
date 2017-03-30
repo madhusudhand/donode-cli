@@ -1,5 +1,4 @@
 'use strict';
-const router = require('donode').Router;
 
 /*  ------   ROUTES   -----
 **
@@ -7,17 +6,19 @@ const router = require('donode').Router;
 **
 */
 
-router.routes([
+module.exports = [
   { path: '/', method: 'GET', handler: 'HomeController@get' },
+
   {
-    path: '/hello',
-    method: 'GET',
-    handler: 'UserController@get',
-    middleware: ['Auth'],
-    headers: ['allow-cors']
+    path: '/api',                             // prefix which would be applied to all children
+    children: [{
+      path: '/hello',                         // route path would be /api/hello because of prefix
+      method: 'GET',
+      handler: 'UserController@get',          // UserController.js inside controllers directory
+      middleware: ['Auth'],                   // Auth.js inside middleware directory
+      headers: ['allow-cors', 'json-content'] // these can be found in headers.js
+    }]
   },
 
   // add more
-]);
-
-module.exports = router;
+];

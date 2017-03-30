@@ -1,18 +1,19 @@
 {
-  "name": "app",
+  "name": "<%= appName %>",
   "version": "0.0.0",
   "license": "MIT",
-  "private": true,
   "readme": "README.md",
   "keywords": [
     "donode",
     "node.js"
   ],
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "app:dev": "NODE_ENV=development node app.js",
+    "app:prod": "NODE_ENV=production node app.js"
   },
   "dependencies": {
-    "donode": "1.0.0-beta.3"
+    "donode": "1.0.0-beta.4"
   },
   "devDependencies": {}
 }

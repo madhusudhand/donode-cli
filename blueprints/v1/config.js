@@ -1,5 +1,6 @@
 // app config
 module.exports = {
+  appRoot      : __dirname,
   envDir       : 'env',
   appDir       : 'app',
   // these are paths inside of appDir
