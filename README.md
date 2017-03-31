@@ -19,3 +19,5 @@ Run the app
 ```
 $ npm start
 ```
+
+Checkout the documentation here: https://npmjs.com/package/donode
