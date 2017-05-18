@@ -13,7 +13,7 @@
     "app:prod": "NODE_ENV=production node app.js"
   },
   "dependencies": {
-    "donode": "1.0.0-beta.4"
+    "donode": "1.0.0-beta.6"
   },
   "devDependencies": {}
 }

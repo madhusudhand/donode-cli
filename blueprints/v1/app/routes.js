@@ -6,19 +6,24 @@
 **
 */
 
-module.exports = [
-  { path: '/', method: 'GET', handler: 'HomeController@get' },
+const routes = [{
+  path: '/api',   // prefix which would be applied to all children
+  headers: ['allow-cors', 'json-content'],   // these can be found in headers.js
 
-  {
-    path: '/api',                             // prefix which would be applied to all children
-    children: [{
-      path: '/hello',                         // route path would be /api/hello because of prefix
+  children: [
+    { path: '/', method: 'GET', handler: 'HomeController@get' },
+    {
+      path: '/hello',                         // route: /api/hello
       method: 'GET',
       handler: 'UserController@get',          // UserController.js inside controllers directory
-      middleware: ['Auth'],                   // Auth.js inside middleware directory
-      headers: ['allow-cors', 'json-content'] // these can be found in headers.js
-    }]
-  },
+      middleware: ['Auth']                    // Auth.js inside middleware directory
+    },
 
-  // add more
-];
+    // add more
+
+  ]
+}];
+
+
+
+module.exports = routes;
