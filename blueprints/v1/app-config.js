@@ -1,8 +1,10 @@
+'use strict';
+
 // app config
 module.exports = {
   appRoot      : __dirname,
   envDir       : 'env',
-  // environment specific configuration can be found at env/<environment>.env.js
+  // environment specific configurations can be overridden at env/<environment>.env.js
   environment  : process.env.NODE_ENV || 'development',
 
   // configuration for APIs
@@ -11,5 +13,15 @@ module.exports = {
   middlewareDir: 'middleware',    // path inside of appDir
 
   // config for static content (html, css, assets etc...)
-  publicDir    : 'public'
+  publicDir    : 'public',
+
+
+  /////////////////////////////////////////////
+  //    define your custom configurations    //
+  //  which are common for all environments  //
+  /////////////////////////////////////////////
+
+
+  // custom: 'what ever',
+
 };

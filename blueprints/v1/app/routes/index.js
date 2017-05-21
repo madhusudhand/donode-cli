@@ -7,8 +7,8 @@
 */
 
 const routes = [{
-  path: '/api',   // prefix which would be applied to all children
-  headers: ['allow-cors', 'json-content'],   // these can be found in headers.js
+  path: '/api',                // prefix which would be applied to all children
+  headers: ['json-content'],   // these can be found in headers.js
 
   children: [
     { path: '/', method: 'GET', handler: 'HomeController@get' },

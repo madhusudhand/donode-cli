@@ -5,10 +5,12 @@ const http = require('http');
 const donode = require('donode').donode;
 const routes = require('./app/routes');
 const headers = require('./app/headers');
-const config = require('./config');
+const config = require('./app-config');
 
 const app = donode.create({ config, routes, headers });
-const server = http.createServer(app.listener)
+
+// create server with https in production mode if you are using SSL.
+const server = (app.config.production) ? http.createServer(app.listener) : http.createServer(app.listener);
 
 server.listen(app.port, app.hostname)
       .on('listening', onListening)
